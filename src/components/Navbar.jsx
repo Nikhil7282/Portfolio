@@ -6,6 +6,7 @@ import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const linkedIn = "www.linkedin.com/in/nikhil-sa";
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
@@ -36,8 +37,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="work" smooth={true} duration={500}>
-            Work
+          <Link to="projects" smooth={true} duration={500}>
+            Projects
           </Link>
         </li>
         <li>
@@ -97,7 +98,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="http://www.linkedin.com/in/nikhil-sa"
+              target="_blank"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -105,7 +107,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://github.com/Nikhil7282"
+              target="_blank"
             >
               Github <FaGithub size={30} />
             </a>
@@ -113,7 +116,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://mail.google.com/"
+              target="_blank"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -121,7 +125,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://drive.google.com/file/d/1isJ6Q-H-Zi-TRZryQ1kqHe0WFIFHK3IC/view?usp=drive_link"
+              target="_blank"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
