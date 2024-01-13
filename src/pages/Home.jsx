@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import AnimatedLetters from "../components/animattedLetters/AnimatedLetters";
+import { Link } from "react-scroll";
 
 const Home = () => {
   const [letter, setLetter] = useState("text-animate");
@@ -73,12 +74,16 @@ const Home = () => {
           building responsive full-stack web applications.
         </p>
         <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
-            View Work
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3 " />
-            </span>
-          </button>
+          <Link to="projects" smooth={true} duration={500}>
+            <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
+              {/* <Link to="projects"> */}
+              View Work
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-0" />
+              </span>
+              {/* </Link> */}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

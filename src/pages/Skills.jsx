@@ -15,7 +15,7 @@ const Skills = () => {
     <div name="skills" className="w-full h-screen bg-[#0a192f] text-gray-300">
       {/* Container */}
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="simple">
+        <div className="simple mt-36">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 ">
             Skills
           </p>

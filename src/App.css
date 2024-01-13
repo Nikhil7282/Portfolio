@@ -1,0 +1,73 @@
+.services,
+.teams {
+  color: #fff;
+  background: #111;
+}
+.services .title::before,
+.teams .title::before {
+  background: #fff;
+}
+.services .title::after,
+.teams .title::after {
+  background: #111;
+  content: "Mini-Projects";
+}
+.services .serv-content a {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services .serv-content a:hover {
+  background: crimson;
+}
+.services .serv-content a .box {
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+.services .serv-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i {
+  color: #fff;
+}
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.services .serv-content .blindsticklink {
+  color: white;
+}
+.services .serv-content .portfoliolink {
+  color: white;
+}
+.services .serv-content .stickynoteslink {
+  color: white;
+}
+
+.services .moreLink {
+  margin-left: 75px;
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.services .moreLink:hover {
+  color: crimson;
+  background: none;
+}
