@@ -6,7 +6,6 @@ import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const linkedIn = "www.linkedin.com/in/nikhil-sa";
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
@@ -80,8 +79,13 @@ const Navbar = () => {
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
+          <Link
+            onClick={handleClick}
+            to="projects"
+            smooth={true}
+            duration={500}
+          >
+            Projects
           </Link>
         </li>
         <li className="py-6 text-4xl">
