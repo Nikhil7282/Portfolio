@@ -16,7 +16,15 @@ function Projects() {
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
             Projects
           </p>
-          <p className="py-6">// Check out some of my recent work</p>
+          <p className="py-6">
+            // View More Projects on{" "}
+            <a
+              href="https://github.com/Nikhil7282"
+              className="text-pink-600 hover:text-gray-200"
+            >
+              Github
+            </a>
+          </p>
         </div>
 
         {/* container for projects */}
