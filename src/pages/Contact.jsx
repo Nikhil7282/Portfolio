@@ -1,21 +1,29 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 const Contact = () => {
-  const SERVICE_ID = "service_ph25bv5";
-  const TEMPLATE_ID = "template_6i3o9r8";
-  const USER_ID = "GrE1I03G5AYF6F_JA";
+  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+  // console.log(import.meta.env.VITE_SERVICE_ID);
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  const USER_ID = import.meta.env.VITE_USER_ID;
+
   const sendEmail = async (e) => {
     e.preventDefault();
+    toast.loading("Sending Email...", { id: "email" });
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
       (result) => {
-        console.log(result);
-        window.location.reload();
+        toast.success("Email sent successfully", { id: "email" });
+        e.target.reset();
+        // console.log(result);
+        // window.location.reload();
       },
       (error) => {
+        toast.error("Email sent failed", { id: "email" });
         console.log(error.text);
       }
     );
   };
+
   return (
     <div
       name="contact"
