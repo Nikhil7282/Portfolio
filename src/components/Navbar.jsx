@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from "../assets/logo.png";
+import Logo from "/Logo.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -45,6 +45,11 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        {/* <li>
+          <Link to="newAbout" smooth={true} duration={500}>
+            NewAbout
+          </Link>
+        </li> */}
       </ul>
 
       {/* Hamburger */}
