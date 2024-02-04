@@ -13,8 +13,6 @@ const Contact = () => {
       (result) => {
         toast.success("Email sent successfully", { id: "email" });
         e.target.reset();
-        // console.log(result);
-        // window.location.reload();
       },
       (error) => {
         toast.error("Email sent failed", { id: "email" });

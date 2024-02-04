@@ -19,17 +19,15 @@ function Projects() {
           <p className="py-6">
             // View More Projects on{" "}
             <a
-              href="https://github.com/Nikhil7282"
               className="text-pink-600 hover:text-gray-200"
+              href="https://github.com/Nikhil7282"
             >
               Github
             </a>
           </p>
         </div>
 
-        {/* container for projects */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-5">
-          {/* Gird Item */}
           {project.map((item, index) => (
             <div
               key={index}
@@ -37,13 +35,11 @@ function Projects() {
               className="shadow-lg shadow-[#040c16] group container rounded-md 
               flex justify-center text-center items-center mx-auto content-div "
             >
-              {/* Hover effect for images */}
               <div className="opacity-0 group-hover:opacity-100 ">
                 <span className="text-2xl font bold text-white tracking-wider ">
                   {item.name}
                 </span>
                 <div className="pt-8 text-center ">
-                  {/* eslint-disable-next-line */}
                   {item.github && (
                     <a href={item.github} target="_blank">
                       <button
@@ -54,7 +50,6 @@ function Projects() {
                       </button>
                     </a>
                   )}
-                  {/* eslint-disable-next-line */}
                   {item.live && (
                     <a href={item.live} target="_blank">
                       <button
