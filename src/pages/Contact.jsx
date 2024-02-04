@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 const Contact = () => {
   const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
-  // console.log(import.meta.env.VITE_SERVICE_ID);
   const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
   const USER_ID = import.meta.env.VITE_USER_ID;
 
@@ -14,8 +13,6 @@ const Contact = () => {
       (result) => {
         toast.success("Email sent successfully", { id: "email" });
         e.target.reset();
-        // console.log(result);
-        // window.location.reload();
       },
       (error) => {
         toast.error("Email sent failed", { id: "email" });

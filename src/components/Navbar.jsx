@@ -18,7 +18,6 @@ const Navbar = () => {
           style={{ width: "100px", height: "100px" }}
         />
       </div>
-      {/* menu */}
       <ul className="hidden md:flex">
         <li>
           <Link to="home" smooth={true} duration={500}>
@@ -52,12 +51,10 @@ const Navbar = () => {
         </li> */}
       </ul>
 
-      {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10 text-2xl mr-4">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
-      {/* Mobile menu */}
       <ul
         className={
           !nav
@@ -101,7 +98,6 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
