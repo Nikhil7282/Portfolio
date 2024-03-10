@@ -3,11 +3,19 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "/Logo.png";
-import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const navigate = useNavigate();
+  const handleClick = (route) => {
+    setNav(!nav);
+    if (route) {
+      navigate(`${route}`);
+    } else {
+      return;
+    }
+  };
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
@@ -19,39 +27,17 @@ const Navbar = () => {
         />
       </div>
       <ul className="hidden md:flex">
-        <li>
-          <Link to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link to="projects" smooth={true} duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
-        {/* <li>
-          <Link to="newAbout" smooth={true} duration={500}>
-            NewAbout
-          </Link>
-        </li> */}
+        <li onClick={() => navigate("/")}>Home</li>
+        <li onClick={() => navigate("/about")}>About</li>
+        <li onClick={() => navigate("/skills")}>Skills</li>
+        <li onClick={() => navigate("/projects")}>Projects</li>
+        <li onClick={() => navigate("/contact")}>Contact</li>
       </ul>
 
-      <div onClick={handleClick} className="md:hidden z-10 text-2xl mr-4">
+      <div
+        onClick={() => handleClick()}
+        className="md:hidden z-10 text-2xl mr-4"
+      >
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -62,39 +48,24 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
-          </Link>
+        <li className="py-6 text-4xl" onClick={() => handleClick("/")}>
+          Home
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl" onClick={() => handleClick("/about")}>
           {" "}
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
-          </Link>
+          About
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl" onClick={() => handleClick("/skills")}>
           {" "}
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
+          Skills
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl" onClick={() => handleClick("/projects")}>
           {" "}
-          <Link
-            onClick={handleClick}
-            to="projects"
-            smooth={true}
-            duration={500}
-          >
-            Projects
-          </Link>
+          Projects
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl" onClick={() => handleClick("/contact")}>
           {" "}
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
+          Contact
         </li>
       </ul>
 

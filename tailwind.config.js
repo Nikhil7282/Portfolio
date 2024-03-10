@@ -10,6 +10,9 @@ export default {
     // },
     screens: {
       xs: "576px",
+      xxs: "375px",
+      mmd: "805px",
+      tablet: "640px",
       ...defaultTheme.screens,
     },
   },
