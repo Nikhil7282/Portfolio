@@ -71,3 +71,17 @@
     transform: rotateX(90deg);
   }
 }
+
+@media screen and (width > 350px) {
+  /* Reduce font size */
+  .role-header {
+    /* font-size: 15px !important; */
+  }
+}
+
+@media screen and (width < 350px) {
+  /* Reduce font size */
+  .role-header {
+    /* font-size: 9rem !important; */
+  }
+}
