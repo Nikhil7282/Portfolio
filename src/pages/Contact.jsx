@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-max bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full h-screen bg-[#0a192f] flex justify-center  p-4"
     >
       <form
         method="POST"
@@ -58,7 +58,7 @@ const Contact = () => {
           required
         ></textarea>
         <button
-          className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 mt-3 py-3 mx-auto flex items-center"
+          className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 mt-6 py-3 mx-auto flex items-center"
           type="submit"
         >
           Let's Collaborate
