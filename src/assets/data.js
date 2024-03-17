@@ -1,22 +1,20 @@
-import WorkIm from "./projects/workImg.jpeg";
-import RealEst from "./projects/realestate.jpg";
-import Blog from "./projects/blogimg.png";
-import RoomChat from "./projects/Roomimg.png";
+import Blog from "./projects/BlogHub.png";
+import Xost from "./projects/Xost.png";
 import Cipher from "./projects/cipher.png";
 export const data = [
   {
     id: 1,
-    name: "React JS Application",
+    name: "BlogHub",
     image: Blog,
     github: "https://github.com/Nikhil7282/BlogHub-Client.git",
     live: "https://bloghub20.netlify.app/",
   },
   {
     id: 2,
-    name: "Group Chat Application",
-    image: RoomChat,
+    name: "Xost",
+    image: Xost,
     github: "https://github.com/Nikhil7282/RoomChat.git",
-    live: "",
+    live: "https://x-ost.vercel.app/",
   },
   {
     id: 3,

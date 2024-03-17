@@ -33,13 +33,14 @@ const About = () => {
                 </p>
               </div>
               <div>
-                <p>
-                  I am passionate about building excellent software that
-                  improves the lives of those around me. I specialize in
-                  creating software for clients ranging from individuals and
-                  small-businesses all the way to large enterprise corporations.
-                  What would you do if you had a software expert available at
-                  your fingertips?
+                <p className="font-mono">
+                  I am a Final year devoted student with aspirations of becoming
+                  a prosperous developer. I'm passionate about programming and
+                  also enjoy working with web technologies and blockchain
+                  technologies. I'm always eager to connect with like-minded
+                  individuals, so feel free to reach out if you'd like to
+                  discuss a project or simply geek out about all things web
+                  development!
                 </p>
               </div>
             </div>
