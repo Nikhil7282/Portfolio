@@ -43,7 +43,11 @@ const Skills = () => {
               Skills
             </p>
           </div>
-          <p className=" ml-2"></p>
+          <p className=" ml-2 font-mono">
+            {" "}
+            I thrive on challenges and am always eager to learn and adapt to new
+            technologies and industry trends.
+          </p>
           <InfiniteCards items={items} direction="right" speed="slow" />
         </div>
       )}

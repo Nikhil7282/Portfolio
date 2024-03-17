@@ -75,10 +75,9 @@ const Home = () => {
         <div className="md:text-4xl sm:text-4xl xs:text-3xl xxs:text-xl  font-bold text-[#8892b0] role-header ">
           <AnimatedLetters letter={letter} strArray={roleArray} idx={16} />
         </div>
-        <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I’m a full-stack developer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building responsive full-stack web applications.
+        <p className="text-[#8892b0] py-4 max-w-[750px]">
+          🚀 Aspiring web Developer | Open to Contribute 🤝 | Passionate about
+          Crafting Digital Experiences 🌐 | Open to Opportunities 🌟
         </p>
         <div>
           {/* <Link to="projects" smooth={true} duration={500}> */}
