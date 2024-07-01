@@ -24,14 +24,14 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0a192f] flex justify-center  p-4"
+      className="w-full h-[calc(100vh-80px)] bg-[#0a192f] flex justify-center items-center"
     >
       <form
         method="POST"
         onSubmit={sendEmail}
-        className="flex flex-col max-w-[600px] w-full"
+        className="flex flex-col max-w-[600px] w-full mb-10 p-5"
       >
-        <div className="pb-8 mt-28">
+        <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
             Contact
           </p>
@@ -53,7 +53,7 @@ const Contact = () => {
         <textarea
           className="bg-[#ccd6f6] p-2"
           name="message"
-          rows="10"
+          rows="6"
           placeholder="Message"
           required
         ></textarea>
