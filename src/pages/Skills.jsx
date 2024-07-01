@@ -37,7 +37,7 @@ const Skills = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="h-fit rounded-md flex flex-col antialiased bg-white dark:bg-inherit dark:bg-grid-white/[0.05] items-center justify-center  overflow-hidden">
+        <div className="h-fit rounded-md flex flex-col antialiased bg-[#0a192f] dark:bg-inherit dark:bg-grid-white/[0.05] items-center justify-center  overflow-hidden">
           <div className="text-left pb-8 w-full ml-5 md:text-center">
             <p className="text-4xl font-bold inline border-b-4 border-pink-600">
               Skills
