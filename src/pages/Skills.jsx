@@ -32,23 +32,23 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="w-full min-h-[100vh] h-fit bg-[#0a192f] text-gray-300"
+      className="w-full h-[calc(100vh-80px)] bg-[#0a192f] text-gray-300 flex justify-center items-center"
     >
       {loading ? (
         <Loader />
       ) : (
-        <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-inherit dark:bg-grid-white/[0.05] items-center justify-center  overflow-hidden">
+        <div className="h-fit rounded-md flex flex-col antialiased bg-white dark:bg-inherit dark:bg-grid-white/[0.05] items-center justify-center  overflow-hidden">
           <div className="text-left pb-8 w-full ml-5 md:text-center">
             <p className="text-4xl font-bold inline border-b-4 border-pink-600">
               Skills
             </p>
           </div>
-          <p className=" ml-2 font-mono">
+          <p className="ml-2 font-mono mb-5">
             {" "}
             I thrive on challenges and am always eager to learn and adapt to new
             technologies and industry trends.
           </p>
-          <InfiniteCards items={items} direction="right" speed="slow" />
+          <InfiniteCards items={items} direction="right" speed="normal" />
         </div>
       )}
     </div>

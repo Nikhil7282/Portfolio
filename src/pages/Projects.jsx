@@ -14,13 +14,13 @@ function Projects() {
   return (
     <div
       name="projects"
-      className="w-full md:h-screen text-gray-300 bg-[#0a192f]"
+      className="w-full sm:h-[calc(100vh-80px)] xs:max-h-fit  text-gray-300 bg-[#0a192f]"
     >
       {loading ? (
         <Loader />
       ) : (
-        <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-          <div className="pb-8 xs:mt-28">
+        <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center w-full">
+          <div className="pb-8">
             <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
               Projects
             </p>
