@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Loader from "../components/Loading/Loader";
+
 const About = () => {
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000);
     return () => clearTimeout(timer);
   });
+
   return (
     <>
       {loading ? (
@@ -34,13 +37,13 @@ const About = () => {
               </div>
               <div>
                 <p className="font-mono">
-                  I am a Final year devoted student with aspirations of becoming
-                  a prosperous developer. I'm passionate about programming and
-                  also enjoy working with web technologies and blockchain
-                  technologies. I'm always eager to connect with like-minded
-                  individuals, so feel free to reach out if you'd like to
-                  discuss a project or simply geek out about all things web
-                  development!
+                  I am a Electronics and Communication graduate with aspirations
+                  of becoming a prosperous developer. I'm passionate about
+                  programming and also enjoy working with web technologies and
+                  blockchain technologies. I'm always eager to connect with
+                  like-minded individuals, so feel free to reach out if you'd
+                  like to discuss a project or simply geek out about all things
+                  web development!
                 </p>
               </div>
             </div>

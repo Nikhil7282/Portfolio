@@ -6,7 +6,6 @@ function AnimatedLetters({ letter, strArray, idx }) {
     <div>
       {strArray.map((char, i) => (
         <span key={char + i} className={`${letter} _${i + idx}`}>
-          {/* {char} */}
           {char === " " ? <>&#160;</> : char}
         </span>
       ))}

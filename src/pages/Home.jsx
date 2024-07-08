@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import AnimatedLetters from "../components/animattedLetters/AnimatedLetters";
-import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
