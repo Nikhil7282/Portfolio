@@ -1,20 +1,23 @@
 import React, { useEffect, useState } from "react";
-import { data } from "../assets/data";
+import { data } from "../utils/data";
 import Loader from "../components/Loading/Loader";
+import { motion } from "framer-motion";
+import ProjectCard from "../components/ProjectCard";
 
 function Projects() {
-  const project = data;
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000);
     return () => clearTimeout(timer);
   });
+
   return (
     <div
       name="projects"
-      className="w-full sm:h-[calc(100vh-80px)] xs:max-h-fit  text-gray-300 bg-[#0a192f]"
+      className="w-full min-h-fit text-gray-300 bg-[#0a192f]"
     >
       {loading ? (
         <Loader />
@@ -35,8 +38,8 @@ function Projects() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-5">
-            {project.map((item, index) => (
+          {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-5">
+            {data.map((item, index) => (
               <div
                 key={index}
                 style={{ backgroundImage: `url(${item.image})` }}
@@ -72,7 +75,19 @@ function Projects() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
+          <section
+            className="flex flex-col justify-center items-center w-full min-h-screen scroll-mt-36 dark:bg-darkBg dark:text-white p-5"
+            id="projects"
+          >
+            <div className="my-10">
+              {data.map((project, index) => (
+                <React.Fragment key={index}>
+                  <ProjectCard {...project} />
+                </React.Fragment>
+              ))}
+            </div>
+          </section>
         </div>
       )}
     </div>
