@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Loader from "../components/Loading/Loader";
 import { skillsData } from "../utils/data";
 import { motion } from "framer-motion";

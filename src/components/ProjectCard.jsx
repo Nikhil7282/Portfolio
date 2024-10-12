@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -26,7 +27,7 @@ export default function ProjectCard({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <a href={github} target="_blank">
+      <a href={github} target="_blank" rel="noreferrer">
         <section
           className={
             "max-w-[52rem] border rounded-lg overflow-hidden relative sm:h-[20rem] transition hover:bg-[#071c3a]  dark:hover:bg-darkOcean"

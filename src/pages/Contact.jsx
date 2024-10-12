@@ -1,6 +1,6 @@
-import React from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import ContactButton from "../components/ContactButton";
 const Contact = () => {
   const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
   const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
@@ -10,7 +10,7 @@ const Contact = () => {
     e.preventDefault();
     toast.loading("Sending Email...", { id: "email" });
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
-      (result) => {
+      () => {
         toast.success("Email sent successfully", { id: "email" });
         e.target.reset();
       },
@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-[calc(100vh-80px)] bg-[#0a192f] flex justify-center items-center"
+      className="w-full h-[calc(100vh-80px)] bg-[#0a192f] flex justify-center items-center text-gray-300"
     >
       <form
         method="POST"
@@ -51,18 +51,15 @@ const Contact = () => {
           required
         />
         <textarea
-          className="bg-[#ccd6f6] p-2"
+          className="bg-[#ccd6f6] p-2 mb-4"
           name="message"
           rows="6"
           placeholder="Message"
           required
         ></textarea>
-        <button
-          className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 mt-6 py-3 mx-auto flex items-center"
-          type="submit"
-        >
-          Let's Collaborate
-        </button>
+        <div className="flex items-center justify-center">
+          <ContactButton type="submit">Let&apos;s Collaborate</ContactButton>
+        </div>
       </form>
     </div>
   );

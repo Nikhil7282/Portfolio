@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { LuCopy } from "react-icons/lu";
 import { LuCopyCheck } from "react-icons/lu";
 

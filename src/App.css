@@ -4,6 +4,35 @@
   box-sizing: border-box;
 }
 
+.hoverText {
+  transition: 0.35s font-weight, 0.35s color;
+}
+
+.hoverText:hover {
+  font-weight: 900;
+  color: #db2777;
+}
+
+/* To the right */
+.hoverText:hover + .hoverText {
+  font-weight: 500;
+  color: #db2777;
+}
+
+.hoverText:hover + .hoverText + .hoverText {
+  font-weight: 300;
+}
+
+/* To the left */
+.hoverText:has(+ .hoverText:hover) {
+  font-weight: 500;
+  color: #db2777;
+}
+
+.hoverText:has(+ .hoverText + .hoverText:hover) {
+  font-weight: 300;
+}
+
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;
@@ -50,6 +79,7 @@
   transform: rotateX(-90deg) translateZ(100px);
   color: #ec4d28;
 }
+
 @keyframes spincube {
   from,
   to {
