@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -78,6 +78,7 @@ const Navbar = () => {
                 className="flex justify-between items-center w-full text-gray-300"
                 href="http://www.linkedin.com/in/nikhil-sa"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaLinkedin size={30} />
                 Linkedin
@@ -88,6 +89,7 @@ const Navbar = () => {
                 className="flex justify-between items-center w-full text-gray-300"
                 href="https://github.com/Nikhil7282"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub size={30} />
                 Github
@@ -98,6 +100,7 @@ const Navbar = () => {
                 className="flex justify-between items-center w-full text-gray-300"
                 href="https://mail.google.com/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <HiOutlineMail size={30} />
                 Email
@@ -108,6 +111,7 @@ const Navbar = () => {
                 className="flex justify-between items-center w-full text-gray-300"
                 href="https://drive.google.com/file/d/1i_7w3qx5v1KlgFtzUnwKdJp6jvYgOm4S/view?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
               >
                 <BsFillPersonLinesFill size={30} />
                 Resume

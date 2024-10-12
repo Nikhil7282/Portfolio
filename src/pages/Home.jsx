@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import AnimatedLetters from "../components/animattedLetters/AnimatedLetters";
 import { useNavigate } from "react-router-dom";
@@ -60,7 +60,7 @@ const Home = () => {
           <span className={letter}>H</span>
           <span className={`${letter} _12`}>i,</span>
           <span> </span>
-          <span className={`${letter} _13`}>I'</span>
+          <span className={`${letter} _13`}>I&apos;</span>
           <span className={`${letter} _14`}>a</span>
           <span className={`${letter} _15`}>m</span>
         </p>

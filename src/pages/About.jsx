@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Loader from "../components/Loading/Loader";
 
 const About = () => {
@@ -32,18 +32,19 @@ const About = () => {
             <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
               <div className="sm:text-right text-4xl font-bold">
                 <p>
-                  Hi. I'm Nikhil, nice to meet you. Please take a look around.
+                  Hi. I&apos;m Nikhil, nice to meet you. Please take a look
+                  around.
                 </p>
               </div>
               <div>
                 <p className="font-mono">
                   I am a Electronics and Communication graduate with aspirations
-                  of becoming a prosperous developer. I'm passionate about
+                  of becoming a prosperous developer. I&apos;m passionate about
                   programming and also enjoy working with web technologies and
-                  blockchain technologies. I'm always eager to connect with
-                  like-minded individuals, so feel free to reach out if you'd
-                  like to discuss a project or simply geek out about all things
-                  web development!
+                  blockchain technologies. I&apos;m always eager to connect with
+                  like-minded individuals, so feel free to reach out if
+                  you&apos;d like to discuss a project or simply geek out about
+                  all things web development!
                 </p>
               </div>
             </div>
