@@ -18,7 +18,7 @@ const About = () => {
       ) : (
         <div
           name="about"
-          className="w-full h-[calc(100vh-80px)] bg-[#0a192f] text-gray-300"
+          className="w-full min-h-[calc(100vh-80px)] bg-[#0a192f] text-gray-300 h-fit flex flex-col justify-center items-center"
         >
           <div className="flex flex-col justify-center items-center w-full h-full">
             <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">

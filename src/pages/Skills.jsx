@@ -29,7 +29,7 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="w-full md:h-[calc(100vh-80px)] h-screen bg-[#0a192f] text-gray-300 flex justify-center "
+      className="w-full min-h-[calc(100vh-80px)] h-fit bg-[#0a192f] text-gray-300 flex justify-center"
     >
       {loading ? (
         <Loader />

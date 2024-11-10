@@ -23,11 +23,11 @@ function Projects() {
         <Loader />
       ) : (
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center w-full">
-          <div className="pb-8">
+          <div className="pb-4">
             <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
               Projects
             </p>
-            <p className="py-6">
+            <p className="pt-4 pb-0">
               // View More Projects on{" "}
               <a
                 className="text-pink-600 hover:text-gray-200"
@@ -38,7 +38,7 @@ function Projects() {
             </p>
           </div>
           <section
-            className="flex flex-col justify-center items-center w-full min-h-screen scroll-mt-36 dark:bg-darkBg dark:text-white p-5"
+            className="flex flex-col justify-center items-center w-full min-h-screen scroll-mt-36 dark:bg-darkBg dark:text-white px-5 pb-5 pt-0"
             id="projects"
           >
             <div className="my-10">
